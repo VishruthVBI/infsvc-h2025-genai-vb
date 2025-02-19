@@ -1,0 +1,11 @@
+openai
+scipy
+numpy
+pyaudio
+backoff
+requests
+yt-dlp
+flask
+boto3
+botocore
+gitpython
