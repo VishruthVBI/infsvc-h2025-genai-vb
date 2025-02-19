@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Mate AI - Test Results</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 800px;
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+        pre {
+            background-color: #f1f1f1;
+            padding: 15px;
+            border-radius: 5px;
+            overflow: auto;
+        }
+        .btn-download {
+            background-color: #ffc107;
+            border: none;
+            margin-top: 20px;
+        }
+        .btn-download:hover {
+            background-color: #e0a800;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="text-center">Test Results</h2>
+        <pre>{{ output }}</pre>
+        <div class="d-grid gap-2">
+            <a href="/" class="btn btn-primary">Upload More Files</a>
+        </div>
+    </div>
+    
+    <div class="d-grid gap-2 text-center" style="margin-top: 30px;">
+        <form action="/download_output" method="post">
+            <button type="submit" class="btn btn-warning btn-download">Download Test Output</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Mate AI - Upload Files or GitHub Repository</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Upload Code Files or Provide GitHub Repository</h2>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <div class="mb-3">
+                <label for="github_url" class="form-label">GitHub Repository URL</label>
+                <input type="text" name="github_url" class="form-control" placeholder="https://github.com/username/repo.git">
+            </div>
+            <div class="mb-3">
+                <label for="git_access_token" class="form-label">GitHub Access Token</label>
+                <input type="text" name="git_access_token" class="form-control" placeholder="Enter GitHub access token">
+            </div>
+            <div class="mb-3">
+                <label for="files" class="form-label">Upload Code Files (optional)</label>
+                <input type="file" name="files[]" class="form-control" multiple>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
